@@ -1,0 +1,61 @@
+/* box for content */
+.form-group {
+    position: relative;
+    padding-top: 1.5rem;
+    max-width: 600px;
+    margin: 50px auto auto;
+}
+/* Styling button */
+button {
+    background-color: #22e60f;
+    border: none;
+    color: #000000;
+    padding: 12px;
+    opacity: 0.6;
+    transition: 0.4s;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+button.inherited {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 5px;
+    height: 45px;
+}
+button:hover {
+    opacity: 1;
+    box-shadow: 0 0px 16px 0 rgba(49, 40, 20, 0.24), 0 17px 30px 0 rgba(0,0,0,0.19);
+}
+
+label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 11px;
+    font-family: Verdana;
+    font-style: italic;
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+input {
+    font-size: 32px;
+    font-family: Verdana;
+    color: darkgrey;
+    border: 0;
+}
+input:hover {
+    border-bottom: 3px solid #3EA8A6;
+    color: black;
+}
+input:hover:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+input:focus {
+    border-bottom: 3px solid #3EA8A6;
+    color: black;
+}
+

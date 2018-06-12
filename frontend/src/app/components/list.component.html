@@ -1,0 +1,5 @@
+<div class="form-group">
+    <ul>
+        <li *ngFor="let listitem of list" (click)="deleteItem(listitem.id)">{{listitem.value}}</li>
+    </ul>
+</div>
